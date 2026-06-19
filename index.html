@@ -3,7 +3,7 @@
 <title>CBSE Class 10 · Boards Decoded</title>
 <style>
 :root{--bg:#0b0e1c;--card:#161b33;--card2:#1f2547;--ink:#eef1ff;--mut:#97a0c4;--line:#2a3158;--accent:#7c9cff;
---sst:#a78bfa;--sci:#22c55e;}
+--sst:#a78bfa;--sci:#22c55e;--mat:#38bdf8;}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:-apple-system,Segoe UI,Roboto,Inter,sans-serif;
 background:radial-gradient(1200px 600px at 50% -10%,#1a2040,transparent),var(--bg);color:var(--ink);line-height:1.5;
 display:flex;flex-direction:column}
@@ -12,16 +12,16 @@ a{color:inherit;text-decoration:none}
 .hero{text-align:center;margin:24px 0 30px}
 .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:800}
 h1{font-size:clamp(28px,6vw,44px);margin:8px 0 6px;letter-spacing:-.5px}
-h1 b{background:linear-gradient(90deg,var(--sst),var(--sci));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+h1 b{background:linear-gradient(90deg,var(--mat),var(--sst),var(--sci));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .sub{color:var(--mut);font-size:15px;max-width:580px;margin:0 auto}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:16px;margin-top:8px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:block;transition:.18s;
 border-top:4px solid var(--line);position:relative;overflow:hidden}
 .card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 12px 40px rgba(0,0,0,.35)}
-.card.sst{border-top-color:var(--sst)} .card.sci{border-top-color:var(--sci)}
+.card.sst{border-top-color:var(--sst)} .card.sci{border-top-color:var(--sci)} .card.mat{border-top-color:var(--mat)}
 .ic{font-size:30px}
 .tag{font-size:11px;font-weight:800;letter-spacing:.05em;padding:3px 9px;border-radius:999px}
-.card.sst .tag{background:rgba(167,139,250,.16);color:var(--sst)} .card.sci .tag{background:rgba(34,197,94,.16);color:var(--sci)}
+.card.sst .tag{background:rgba(167,139,250,.16);color:var(--sst)} .card.sci .tag{background:rgba(34,197,94,.16);color:var(--sci)} .card.mat .tag{background:rgba(56,189,248,.16);color:var(--mat)}
 .nm{font-size:21px;font-weight:800;margin:12px 0 2px}
 .code{color:var(--mut);font-size:12.5px;margin-bottom:14px}
 .stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
@@ -39,6 +39,19 @@ footer{color:var(--mut);font-size:11.5px;text-align:center;padding:22px 18px;mar
     <p class="sub">Every official board paper, read and decoded — chapters ranked by marks, the questions that repeat most, with answers from the official marking schemes and Hinglish explanations. Built for the 2027 boards.</p>
   </div>
   <div class="grid">
+    <a class="card mat" href="maths.html">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <span class="ic">📐</span><span class="tag">CODE 041</span>
+      </div>
+      <div class="nm">Mathematics</div>
+      <div class="code">Standard · Algebra · Geometry · Trigonometry · Mensuration · 14 chapters</div>
+      <div class="stats">
+        <div class="st"><b>63</b><span>papers</span></div>
+        <div class="st"><b>3,342</b><span>questions</span></div>
+        <div class="st"><b>606</b><span>canonical Qs</span></div>
+      </div>
+      <span class="open">Open Maths Decoded <span class="arr">→</span></span>
+    </a>
     <a class="card sci" href="science.html">
       <div style="display:flex;justify-content:space-between;align-items:flex-start">
         <span class="ic">🔬</span><span class="tag">CODE 086</span>
